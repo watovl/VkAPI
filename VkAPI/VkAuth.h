@@ -1,4 +1,5 @@
-#pragma once
+#ifndef VKAUTH_H
+#define VKAUTH_H
 
 #include <QtWidgets/QMainWindow>
 #include <QWebEngineView>
@@ -18,3 +19,5 @@ signals:
 	void success(const QString &token, const QString &userID);
 	void failure(const QString &error, const QString &description);
 };
+
+#endif

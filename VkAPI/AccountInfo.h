@@ -1,4 +1,5 @@
-#pragma once
+#ifndef ACCOUNTINFO_H
+#define ACCOUNTINFO_H
 
 #include <QWidget>
 #include "ui_AccountInfo.h"
@@ -16,3 +17,5 @@ public slots:
 private:
 	Ui::AccountInfo *ui;
 };
+
+#endif

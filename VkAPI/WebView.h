@@ -1,4 +1,5 @@
-#pragma once
+#ifndef WEBVIEW_H
+#define WEBVIEW_H
 
 #include <QWidget>
 #include <QHBoxLayout>
@@ -25,3 +26,5 @@ private:
 	VkAuth *vkAuth;
 	QHBoxLayout *layout;
 };
+
+#endif

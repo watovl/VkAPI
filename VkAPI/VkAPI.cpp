@@ -1,4 +1,5 @@
 #include "VkAPI.h"
+#include "VersionAPI.h"
 #include <QUrl>
 #include <QUrlQuery>
 #include <QtNetwork>
@@ -35,7 +36,7 @@ void VkAPI::onWallPostButton() {
 	QUrlQuery param;
 	param.addQueryItem("owner_id", mUserID);
 	param.addQueryItem("message", ui.wallPostEdit->toPlainText());
-	param.addQueryItem("v", "5.52");
+	param.addQueryItem("v", VersionAPI);
 	param.addQueryItem("access_token", mToken);
 	url.setQuery(param);
 
@@ -55,7 +56,7 @@ void VkAPI::onMessageSendButton() {
 	QUrlQuery param;
 	param.addQueryItem(user, ui.userIDEdit->text());
 	param.addQueryItem("message", ui.messageEdit->toPlainText());
-	param.addQueryItem("v", "5.52");
+	param.addQueryItem("v", VersionAPI);
 	param.addQueryItem("access_token", mToken);
 	url.setQuery(param);
 
@@ -68,7 +69,7 @@ void VkAPI::onMessageSendButton() {
 void VkAPI::onAccountInfoButton() {
 	QUrl url("https://api.vk.com/method/account.getInfo");
 	QUrlQuery param;
-	param.addQueryItem("v", "5.52");
+	param.addQueryItem("v", VersionAPI);
 	param.addQueryItem("access_token", mToken);
 	url.setQuery(param);
 
@@ -81,7 +82,7 @@ void VkAPI::onAccountInfoButton() {
 void VkAPI::onProfileInfoButton() {
 	QUrl url("https://api.vk.com/method/account.getProfileInfo");
 	QUrlQuery param;
-	param.addQueryItem("v", "5.52");
+	param.addQueryItem("v", VersionAPI);
 	param.addQueryItem("access_token", mToken);
 	url.setQuery(param);
 

@@ -1,4 +1,5 @@
-#pragma once
+#ifndef VKAPI_H
+#define VKAPI_H
 
 #include <QtWidgets/QMainWindow>
 #include "ui_VkAPI.h"
@@ -40,3 +41,5 @@ private:
 	QString mToken;
 	QString mUserID;
 };
+
+#endif

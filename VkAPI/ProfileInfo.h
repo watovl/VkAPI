@@ -1,4 +1,5 @@
-#pragma once
+#ifndef PROFILEINFO_H
+#define PROFILEINFO_H
 
 #include <QWidget>
 #include "ui_ProfileInfo.h"
@@ -16,3 +17,5 @@ public slots:
 private:
 	Ui::ProfileInfo *ui;
 };
+
+#endif

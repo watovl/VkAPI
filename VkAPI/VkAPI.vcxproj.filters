@@ -48,6 +48,12 @@
     <ClCompile Include="ProfileInfo.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="VersionAPI.h">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="VersionAPI.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="VkAPI.h">

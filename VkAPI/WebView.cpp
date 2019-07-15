@@ -8,8 +8,8 @@
 WebView::WebView(QWidget *parent) : QWidget(parent), ui(new Ui::WebView) {
 	ui->setupUi(this);
 
-	QString app("7037949"); // ID приложения
-	QString scope("wall,offline"); // права (messaeges - не доступны для приложений без подтверждения самим вк)
+	const QString app("7037949"); // ID приложения
+	const QString scope("wall"); // права (messaeges - не доступны для приложений без подтверждения поддержкой вк)
 	vkAuth = new VkAuth(app, scope, this);
 
 	connect(vkAuth, SIGNAL(success(const QString &, const QString &)), SLOT(authSuccess(const QString &, const QString &)));
