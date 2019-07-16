@@ -3,6 +3,7 @@
 #include <QUrl>
 #include <QUrlQuery>
 
+
 VkAuth::VkAuth(const QString &app, const QString &scope, QWidget *parent) : QWebEngineView(parent) {
 	connect(this, SIGNAL(urlChanged(QUrl)), SLOT(handleUrlChange(QUrl)));
 

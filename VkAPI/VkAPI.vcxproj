@@ -116,7 +116,6 @@
     <ClCompile Include="AccountInfo.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="ProfileInfo.cpp" />
-    <ClCompile Include="VersionAPI.cpp" />
     <ClCompile Include="VersionAPI.h" />
     <ClCompile Include="VkAPI.cpp" />
     <ClCompile Include="VkAuth.cpp" />

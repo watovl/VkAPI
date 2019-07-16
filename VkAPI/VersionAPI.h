@@ -2,6 +2,6 @@
 #define VERSIONAPI_H
 
 //актуальная версия API вконтакте
-extern const char *VersionAPI;
+static const char *VersionAPI = "5.52";
 
 #endif // !VERSION_H
